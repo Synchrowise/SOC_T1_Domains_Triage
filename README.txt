@@ -29,6 +29,8 @@ Finally make sure your token.json file and credantials.json file are available i
 
 Warning: 
 
+0) The scripts have been implemented with python 3.5
+
 1) This script only works if you have these prerequisites:
 
 - All the import libraries that are not natively available with python have been downloaded and installed such as: wmi, requests, lxml and google-api-python-client
