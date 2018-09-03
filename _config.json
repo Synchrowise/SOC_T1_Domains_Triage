@@ -1,0 +1,20 @@
+{
+    "gmail":{
+        "token":"",
+        "secrets":"",
+        "user_id":"",
+        "query":""
+    },
+	"virustotal":{
+        "api_key":""
+        
+    },
+	
+	"urlvoid":{
+        "api_id":"",
+        "api_key":""      
+    } 
+    
+    
+	 
+}
