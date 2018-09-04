@@ -1,16 +1,18 @@
-0) The user must use a Gmail desktop client to send a list of domain names each one in a separate line. All extra text must be deleted before sending the email to a preconfigured gmail mailbox that's accessed by the python script via Gmail API.
+0) The user must use a Gmail desktop client to send a list of domain names each one in a separate line within the email body. All extra text must be deleted before sending the email to a preconfigured gmail mailbox.
 
-1) The "_pull_and_process_domains_from_Gmail_message.py" will access the mailbox and search for messages satisfying a given search query (specified in the _config.json file)
+1) The preconfigured mailbox will allow access to the the python script via Gmail API.
 
-2) Once queried messages are listed, it checks a given text file for previously processed messages and skips them
+2) The "_pull_and_process_domains_from_Gmail_message.py" script will access the mailbox and search for messages satisfying a given search query (specified in the _config.json file)
 
-3) If an unprocessed message is found, it executes 3 links each one starting a python analysis script. One via VirusTotal, one via Urlvoid and one via Quttera.
+3) Once queried messages are listed, it checks a given text file for previously processed messages and skips them
 
-4) Then it continuously checks the task list for these newly started python scripts. Once they have terminated it resumes by sending their result as emails to the sender
+4) If an unprocessed message is found, it executes 3 links each one starting a python analysis script. One via VirusTotal, one via Urlvoid and one via Quttera.
 
-5) The first email that is sent contains domain names that have been flagged as dangerous by VirusTotal, Urlvoid or Quttera 
+5) Then it continuously checks the task list for these newly started python scripts. Once they have terminated it resumes by sending their result as emails to the sender
 
-6) The other 3 messages each contains the analysis details for the queried websites
+6) The first email that is sent contains domain names that have been flagged as dangerous by VirusTotal, Urlvoid or Quttera 
+
+7) The other 3 messages each contains the analysis details for the queried websites
 
 
 For google gmail api follow: https://developers.google.com/gmail/api/quickstart/python
